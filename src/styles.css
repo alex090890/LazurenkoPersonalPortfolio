@@ -27,6 +27,7 @@ html {
 
 .maincontainer {
   margin: 0 20px;
+  z-index: 1;
 }
 
 .social {
@@ -62,6 +63,10 @@ html {
 
 .pagetitle {
   text-align: center;
+}
+
+.englishscore {
+  width: 300px;
 }
 
 @media screen and (max-width: 600px) {
