@@ -1,6 +1,8 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
+import Address from "./Address";
 import Currentposition from "./Currentposition";
+import Social from "./Social";
 
 const MyTabs = () => {
   return (
@@ -16,10 +18,13 @@ const MyTabs = () => {
       <TabPanel>
         <h2>Welcome</h2>
       </TabPanel>
-      <TabPanel></TabPanel>
+      <TabPanel>
+        <Social />
+      </TabPanel>
       <TabPanel>
         <h2>Our Location</h2>
         <Currentposition />
+        <Address />
       </TabPanel>
       <TabPanel></TabPanel>
       <TabPanel></TabPanel>

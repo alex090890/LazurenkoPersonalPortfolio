@@ -1,8 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .App {
   font-family: sans-serif;
+  background-image: url("https://images.pexels.com/photos/673648/pexels-photo-673648.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fill;
+  height: 100%;
+  width: 100%;
+  color: black;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow-y: scroll;
+}
+
+.maincontainer {
+  margin: 0 20px;
+}
+
+.social {
+  height: 30px;
+  width: 30px;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+}
+
+.title {
+  text-align: center;
+  padding-top: 20px;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  justify-items: stretch;
+  align-items: center;
+}
+
+.title h1 {
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Ballet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.pagetitle {
   text-align: center;
 }
 
-h1 {
-  text-align: center;
+@media screen and (max-width: 600px) {
+  .title {
+    grid-template-columns: 1fr;
+  }
 }
