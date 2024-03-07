@@ -1,6 +1,7 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Address from "./Address";
+import Certificates from "./certificates/Certificates";
 import Currentposition from "./Currentposition";
 import Social from "./Social";
 
@@ -27,7 +28,9 @@ const MyTabs = () => {
         <Address />
       </TabPanel>
       <TabPanel></TabPanel>
-      <TabPanel></TabPanel>
+      <TabPanel>
+        <Certificates />
+      </TabPanel>
     </Tabs>
   );
 };
