@@ -64,6 +64,10 @@ html {
   text-align: center;
 }
 
+.englishscore {
+  width: 300px;
+}
+
 @media screen and (max-width: 600px) {
   .title {
     grid-template-columns: 1fr;
