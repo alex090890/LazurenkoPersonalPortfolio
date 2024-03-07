@@ -64,6 +64,13 @@ export default function Title() {
           src="https://img.icons8.com/color/48/tiktok--v1.png"
           alt="tiktok--v1"
         />
+        <img
+          width="48"
+          height="48"
+          src="https://img.icons8.com/fluency/48/linkedin.png"
+          alt="linkedin"
+          className="social"
+        />
       </div>
     </div>
   );

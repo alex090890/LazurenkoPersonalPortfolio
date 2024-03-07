@@ -1,6 +1,5 @@
 import React from "react";
 import englishscore from "./Englishscore.jpg";
-import englscore from "./EnglishScore.pdf";
 
 const Certificates = () => {
   return (
