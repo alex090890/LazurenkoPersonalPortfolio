@@ -69,6 +69,11 @@ html {
   width: 300px;
 }
 
+.langSwitch {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
 @media screen and (max-width: 600px) {
   .title {
     grid-template-columns: 1fr;

@@ -7,7 +7,7 @@ export default function AppDe() {
       <div className="maincontainer">
         <Header />
         <MyTabs />
-        <h1>Hallo</h1>
+        <h1>Hallo. WIe geht es?</h1>
       </div>
     </div>
   );

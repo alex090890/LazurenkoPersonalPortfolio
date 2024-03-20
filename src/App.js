@@ -14,7 +14,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <select value={language} onChange={handleLanguageChange}>
+      <select value={language} onChange={handleLanguageChange} className="langSwitch">
         <option value="en">EN</option>
         <option value="de">DE</option>
         <option value="ukr">UKR</option>
