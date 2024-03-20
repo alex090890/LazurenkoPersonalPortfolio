@@ -1,12 +1,12 @@
-import MyTabs from "./MyTabs";
 import Header from "./Header";
+import MyTabsUkr from "./MyTabsUkr";
 
 export default function AppUkr() {
   return (
     <div>
       <div className="maincontainer">
         <Header />
-        <MyTabs />
+        <MyTabsUkr />
         <h1>Привіт</h1>
       </div>
     </div>
