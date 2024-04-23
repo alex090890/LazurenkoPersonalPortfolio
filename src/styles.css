@@ -79,3 +79,40 @@ html {
     grid-template-columns: 1fr;
   }
 }
+
+
+.homecontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.homecard {
+  width: 100%;
+  cursor: pointer!important;
+}
+
+.homeimage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer!important;;
+}
+
+@media screen and (max-width: 600px) {
+  .homecontainer {
+    grid-template-columns: 1fr;
+  }
+
+  .homecard {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .homecard {
+    width: 100%;
+  }
+}

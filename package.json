@@ -5,9 +5,13 @@
   "keywords": [],
   "main": "src/index.tsx",
   "dependencies": {
+    "antd": "^5.16.4",
+    "bootstrap": "^5.3.3",
     "leaflet": "^1.9.4",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
     "react-dom": "^18.0.0",
+    "react-icons": "^5.1.0",
     "react-leaflet": "^4.2.1",
     "react-scripts": "^5.0.0",
     "react-tabs": "^6.0.2"

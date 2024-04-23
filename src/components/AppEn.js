@@ -7,7 +7,6 @@ export default function AppEn() {
       <div className="maincontainer">
         <Header />
         <MyTabs />
-        <h1>Hello</h1>
       </div>
     </div>
   );
