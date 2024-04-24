@@ -45,8 +45,8 @@ return (
         </div>
       </TabPanel>
       <TabPanel>
-        <h1 className="itemtitle">Oleksandr Lazurenko</h1>
-        <h2 className="itemtitle">Fullstack Web Developer</h2>
+        <h1 className="itemtitle">Oleksandr Lazurenko(亚历克斯)</h1>
+        <h2 className="itemtitle">全栈网络开发人员</h2>
         <p>如果您对我的简历和其他资历感兴趣，请随时联系，或致电邮件：<a href="mailto: alex_prof@web.de" className="email">alex_prof@web.de</a></p>
         <h3 className="itemtitle">使用语言</h3>
         <Table striped responsive>
