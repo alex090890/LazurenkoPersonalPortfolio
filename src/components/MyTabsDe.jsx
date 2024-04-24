@@ -1,7 +1,7 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Address from "./Address";
-import Currentposition from "./Currentposition";
+import MyMapComponent from "./MyMapComponent";
 import Table from 'react-bootstrap/Table';
 import Footer from "./Footer";
 import { Card } from 'antd';
@@ -105,9 +105,10 @@ const MyTabsDe = () => {
         <Footer />
       </TabPanel>
       <TabPanel>
-        <h2 className="itemtitle whitetext">Standort</h2>
-        <Currentposition />
+        <h1 className="itemtitle whitetext">Standort</h1>
+        <h2 className="itemtitle whitetext">Anschrift</h2>
         <Address />
+        <MyMapComponent />
         <h2 className="itemtitle whitetext">Kontaktieren Sie mich</h2>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfBsAmK4Yo2B6t73BOQstj1dcvFHVT586PCFjQf3zlRn7NE_A/viewform?embedded=true" width="100%" height="676" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
       </TabPanel>
@@ -126,7 +127,7 @@ const MyTabsDe = () => {
       <TabPanel>
         <div>
           <div>
-      <h2 className="itemtitle whitetext">Language certificates</h2>
+      <h2 className="itemtitle whitetext">Sprachzeugnisse</h2>
       <Carousel fade>
         <Carousel.Item>
           <img src="/Englishscore.jpg" alt="Englishscore" className="englishscore" />
@@ -149,7 +150,7 @@ const MyTabsDe = () => {
       </Carousel>
     </div>
     <div>
-        <h2 className="itemtitle whitetext">IT certificates</h2>
+        <h2 className="itemtitle whitetext">IT-Zeugnisse</h2>
         <Carousel>
           <Carousel.Item>
             <img src="/Codecademy.png" alt="Codecademy" className="englishscore" />

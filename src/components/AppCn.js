@@ -1,12 +1,12 @@
 import Header from "./Header";
-import MyTabsUkr from "./MyTabsUkr";
+import MyTabsCn from "./MyTabsCn";
 
 export default function AppCn() {
   return (
     <div>
       <div className="maincontainer">
         <Header />
-        <MyTabsUkr />
+        <MyTabsCn />
         <h1>Привіт</h1>
       </div>
     </div>

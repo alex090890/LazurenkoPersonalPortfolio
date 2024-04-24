@@ -12,7 +12,7 @@ html {
 
 .App {
   font-family: sans-serif;
-  background: linear-gradient(75deg, #008000, #0000ff, #008000, #0000ff, #008000, #0000ff);
+  background: linear-gradient(45deg, #008000, #7272e2, #008000, #7272e2, #008000, #7272e2);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: fill;

@@ -1,8 +1,7 @@
 export default function Address() {
   return (
     <div>
-      <h2 className="itemtitle">Postal adress</h2>
-      <p>
+      <p className="whitetext">
         Oleksandr Lazurenko
         <br />
         Holzhofallee 36

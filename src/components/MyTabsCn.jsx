@@ -4,7 +4,7 @@ import Address from "./Address";
 import Currentposition from "./Currentposition";
 import Social from "./Social";
 
-const MyTabsUkr = () => {
+const MyTabsCn = () => {
   return (
     <Tabs>
       <TabList>
@@ -33,4 +33,4 @@ const MyTabsUkr = () => {
   );
 };
 
-export default MyTabsUkr;
+export default MyTabsCn;
