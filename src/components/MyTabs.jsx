@@ -29,12 +29,13 @@ const MyTabs = () => {
           <p>Dear Ladies and Gentlemen,</p>
           <br />
           <p>welcome to the personal portfolio webpage of Oleksandr Lazurenko, a fullstack web developer. I can build a website for you from the scratch, starting with the design and ending with the backend. My main stack is MERN (MongoDB, Express, React, Node.js). Here are my strengths:</p>
-          <ol>
+          <ul>
             <li>Punctual</li>
             <li>Responsible</li>
             <li>Reliable</li>
             <li>Diligent</li>
-          </ol>
+          </ul>
+          <p>As I have lived in and worked in China for more than nine years, I got a very good experience in communicating with clients, which is a very important skill nowadays.</p>
             <p>If you would like to learn more, please do not hesitate to contact me.</p>
             <p>With the best wishes,</p>
             <br />
@@ -45,14 +46,14 @@ const MyTabs = () => {
         </div>
       </TabPanel>
       <TabPanel>
-        <h1 className="itemtitle whitetext">Oleksandr Lazurenko</h1>
-        <h2 className="itemtitle whitetext">Fullstack Web Developer</h2>
-        <p className="whitetext">If you are interested about my CV and other credentials, please feel free to contact me using the contact form or write directly to my email: <a href="mailto: alex_prof@web.de" className="email">alex_prof@web.de</a></p>
-        <h3 className="itemtitle whitetext">Languages spoken:</h3>
+        <h1 className="itemtitle">Oleksandr Lazurenko</h1>
+        <h2 className="itemtitle">Fullstack Web Developer</h2>
+        <p>If you are interested about my CV and other credentials, please feel free to contact me using the contact form or write directly to my email: <a href="mailto: alex_prof@web.de" className="email">alex_prof@web.de</a></p>
+        <h3 className="itemtitle">Languages spoken:</h3>
         <Table striped responsive>
           <thead>
             <tr>
-              <th>#</th>
+              <th></th>
               <th>Language</th>
               <th>Level</th>
               <th>European classification</th>
@@ -60,39 +61,33 @@ const MyTabs = () => {
           </thead>
           <tbody>
             <tr>
-              <td>1</td>
+              <td><img src="/ukraine (1).png" className="langicon" /></td>
               <td>Ukrainian</td>
               <td>Mothertongue</td>
               <td>C2</td>
             </tr>
             <tr>
-              <td>2</td>
-              <td>Russian</td>
-              <td>Mothertongue</td>
-              <td>C2</td>
-            </tr>
-            <tr>
-              <td>3</td>
+              <td><img src="/united-states-of-america (1).png" className="langicon" /></td>
               <td>English</td>
               <td>Advanced</td>
               <td>C1</td>
             </tr>
             <tr>
-              <td>4</td>
+              <td><img src="/germany (2).png" className="langicon" /></td>
               <td>German</td>
               <td>Upper-intermediate</td>
               <td>B2</td>
             </tr>
             <tr>
-              <td>5</td>
+              <td><img src="/china (1).png" className="langicon" /></td>
               <td>Chinese</td>
               <td>Beginner's level</td>
               <td>A2</td>
             </tr>
           </tbody>
         </Table>
-        <p className="whitetext"> My main stack is MERN (MongoDB, Express, React, Node.js):</p>
-        <ul className="whitetext">
+        <p> My main stack is MERN (MongoDB, Express, React, Node.js):</p>
+        <ul>
           <li>MongoDB</li>
           <li>ExpressJS</li>
           <li>React</li>
@@ -100,20 +95,22 @@ const MyTabs = () => {
           <li>Vercel</li>
           <li>Netlify</li>
         </ul>
-        <p className="whitetext">I am always eager to learn, and learning some new skills is always fascinating to me.</p>
+        <p>I am always eager to learn, and learning some new skills is always fascinating to me.</p>
         <hr />
         <Footer />
       </TabPanel>
       <TabPanel>
-        <h1 className="itemtitle whitetext">Our Location</h1>
-        <h2 className="itemtitle whitetext">Postal adress</h2>
+        <h1 className="itemtitle">Our Location</h1>
+        <h2 className="itemtitle">Postal adress</h2>
         <Address />
         <MyMapComponent />
-        <h2 className="itemtitle whitetext" >Contact me:</h2>
+        <h2 className="itemtitle" >Contact me:</h2>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfBsAmK4Yo2B6t73BOQstj1dcvFHVT586PCFjQf3zlRn7NE_A/viewform?embedded=true" width="100%" height="676" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        <hr />
+        <Footer />
       </TabPanel>
       <TabPanel>
-        <h2 className="itemtitle whitetext"><a href="https://github.com/alex090890"><IoLogoGithub /></a>Portfolio Repositories</h2>
+        <h2 className="itemtitle"><a href="https://github.com/alex090890" target="_blank"><img src="/github.png" className="social" /></a>Portfolio Repositories</h2>
         <div className="imagecontainer">
           <img src="/Screenshot 2024-04-24 09.53.01.png" alt="portfolio sample 1" className="imagecard" />
           <img src="/Screenshot 2024-04-24 09.55.52.png" ale="portfolio sample 2" className="imagecard" />
@@ -127,7 +124,7 @@ const MyTabs = () => {
       <TabPanel>
                 <div>
           <div>
-      <h2 className="itemtitle whitetext">Language certificates</h2>
+      <h2 className="itemtitle">Language certificates</h2>
       <Carousel fade>
         <Carousel.Item>
           <img src="/Englishscore.jpg" alt="Englishscore" className="englishscore" />
@@ -150,7 +147,7 @@ const MyTabs = () => {
       </Carousel>
     </div>
     <div>
-        <h2 className="itemtitle whitetext">IT certificates</h2>
+        <h2 className="itemtitle">IT certificates</h2>
         <Carousel>
           <Carousel.Item>
             <img src="/Codecademy.png" alt="Codecademy" className="englishscore" />
@@ -177,7 +174,9 @@ const MyTabs = () => {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-      </div>
+          </div>
+          <hr />
+          <Footer />
         </div>
       </TabPanel>
     </Tabs>

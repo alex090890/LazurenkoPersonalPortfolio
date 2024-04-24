@@ -1,76 +1,17 @@
 export default function Title() {
   return (
     <div className="title">
-      <div>
-        <img src="AlexProf-logo-1.jpg" alt="AlexProf" className="logo" />
-        <h1 className="pagetitle">AlexProf services</h1>
+      <div className="titlecontainer">
+
+        <h1 className="pagetitle">AlexProf Services</h1>
       </div>
       <div>
-        <img
-          className="social"
-          width="48"
-          height="48"
-          src="https://img.icons8.com/color/48/instagram-new--v2.png"
-          alt="instagram-new--v2"
-        />
-        <img
-          className="social"
-          width="48"
-          height="48"
-          src="https://img.icons8.com/pulsar-line/48/threads.png"
-          alt="threads"
-        />
-        <img
-          className="social"
-          width="48"
-          height="48"
-          src="https://img.icons8.com/color/48/twitterx--v1.png"
-          alt="twitterx--v1"
-        />
-        <img
-          className="social"
-          width="48"
-          height="48"
-          src="https://img.icons8.com/color/48/facebook-new.png"
-          alt="facebook-new"
-        />
-        <a href="https://discord.gg/2sUr3M6WPS" target="_blank">
-          <img
-            className="social"
-            width="48"
-            height="48"
-            src="https://img.icons8.com/color/48/discord-logo.png"
-            alt="discord-logo"
-          />
-        </a>
-        <img
-          className="social"
-          width="48"
-          height="48"
-          src="https://img.icons8.com/sf-regular-filled/48/medium-logo.png"
-          alt="medium-logo"
-        />
-        <img
-          className="social"
-          width="48"
-          height="48"
-          src="https://img.icons8.com/color/48/youtube-squared.png"
-          alt="youtube-squared"
-        />
-        <img
-          className="social"
-          width="48"
-          height="48"
-          src="https://img.icons8.com/color/48/tiktok--v1.png"
-          alt="tiktok--v1"
-        />
-        <img
-          width="48"
-          height="48"
-          src="https://img.icons8.com/fluency/48/linkedin.png"
-          alt="linkedin"
-          className="social"
-        />
+        <a href="https://www.facebook.com/OleksandrLazurenkoUA" target="_blank"><img src="/facebook.png" className="social" /></a>
+        <a href="https://www.instagram.com/oleksandrlazurenkoua/" target="_blank"><img src="/instagram (1).png" className="social"/></a>
+        <a href="https://github.com/alex090890" target="_blank"><img className="social" src="/github.png" /></a>
+        <a href="https://twitter.com/AlexL090890" target="_blank"><img src="/twitter.png" className="social" /></a>
+        <a href="https://www.linkedin.com/in/alex090890/"><img src="/linkedin-icon.png" className="social" /></a>
+        <a href="mailto: alex_prof@web.de" target="_blank"><img src="/gmail.png" className="social" /></a>
       </div>
     </div>
   );
