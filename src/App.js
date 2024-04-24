@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import AppEn from "./components/AppEn";
 import AppDe from "./components/AppDe";
 import AppUkr from "./components/AppUkr";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import "./styles.css";
 

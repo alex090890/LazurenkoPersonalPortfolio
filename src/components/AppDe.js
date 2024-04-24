@@ -1,4 +1,4 @@
-import MyTabs from "./MyTabs";
+import MyTabsDe from "./MyTabsDe"
 import Header from "./Header";
 
 export default function AppDe() {
@@ -6,8 +6,7 @@ export default function AppDe() {
     <div>
       <div className="maincontainer">
         <Header />
-        <MyTabs />
-        <h1>Hallo. WIe geht es?</h1>
+        <MyTabsDe />
       </div>
     </div>
   );

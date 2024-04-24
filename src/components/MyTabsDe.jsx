@@ -9,15 +9,15 @@ import { Card } from 'antd';
 import { IoLogoGithub } from "react-icons/io";
 const { Meta } = Card;
 
-const MyTabs = () => {
+const MyTabsDe = () => {
   return (
     <Tabs>
       <TabList>
-        <Tab>Home</Tab>
-        <Tab>About me</Tab>
-        <Tab>Contact Details</Tab>
-        <Tab>Portfolio Repositories</Tab>
-        <Tab>Certificates</Tab>
+        <Tab>Startseite</Tab>
+        <Tab>Über mich</Tab>
+        <Tab>Kontakt</Tab>
+        <Tab>Portfolio-Repositorys</Tab>
+        <Tab>Zeugnisse</Tab>
       </TabList>
 
       <TabPanel>
@@ -26,9 +26,9 @@ const MyTabs = () => {
           <Meta title="Oleksandr Lazurenko" description="alex_prof@web.de" />
         </Card>
         <Card hoverable title="Welcome to AlexProf!" bordered={false} className="homecard" >
-          <p>Dear Ladies and Gentlemen,</p>
+          <p>Sehr geehrte Damen und Herren,</p>
           <br />
-          <p>welcome to the personal portfolio webpage of Oleksandr Lazurenko, a fullstack web developer. I can build a website for you from the scratch, starting with the design and ending with the backend. My main stack is MERN (MongoDB, Express, React, Node.js). Here are my strengths:</p>
+          <p>willkommen auf der persönlichen Portfolio-Webseite von Oleksandr Lazurenko, einem Fullstack-Webentwickler. Ich kann für Sie eine Website von Grund auf erstellen, angefangen beim Design bis hin zum Backend. Mein Hauptstack ist MERN (MongoDB, Express, React, Node.js). Hier sind meine Stärken:</p>
           <ol>
             <li>Punctual</li>
             <li>Responsible</li>
@@ -130,4 +130,4 @@ const MyTabs = () => {
   );
 };
 
-export default MyTabs;
+export default MyTabsDe;

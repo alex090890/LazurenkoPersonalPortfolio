@@ -1,7 +1,7 @@
 export default function Address() {
   return (
     <div>
-      <h2>Postal adress</h2>
+      <h2 className="itemtitle">Postal adress</h2>
       <p>
         Oleksandr Lazurenko
         <br />

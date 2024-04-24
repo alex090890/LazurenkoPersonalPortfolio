@@ -66,7 +66,8 @@ html {
 }
 
 .englishscore {
-  width: 300px;
+  width: 70%;
+  margin: 10px 15%;
 }
 
 .langSwitch {
@@ -101,6 +102,26 @@ html {
   cursor: pointer!important;;
 }
 
+.footer {
+  text-align: center;
+}
+
+.imagecontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .imagecard {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+.itemtitle {
+  text-align: center;
+}
+
 @media screen and (max-width: 600px) {
   .homecontainer {
     grid-template-columns: 1fr;
@@ -108,6 +129,10 @@ html {
 
   .homecard {
     width: 100%;
+  }
+
+  .imagecontainer {
+    display: inline-block;
   }
 }
 
