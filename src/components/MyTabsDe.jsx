@@ -47,7 +47,7 @@ const MyTabsDe = () => {
       <TabPanel>
         <h1 className="itemtitle whitetext">Oleksandr Lazurenko</h1>
         <h2 className="itemtitle ">Fullstack Web Entwickler</h2>
-        <p className="whitetext">Wenn Sie über meinen Lebenslauf und andere Anmeldeinformationen unterhalten sind, können Sie mich gerne mit dem Kontaktformular kontaktieren oder direkt in meine E -Mail schreiben: <a href="mailto: alex_prof@web.de">alex_prof@web.de</a></p>
+        <p className="whitetext">Wenn Sie über meinen Lebenslauf und andere Anmeldeinformationen unterhalten sind, können Sie mich gerne mit dem Kontaktformular kontaktieren oder direkt in meine E -Mail schreiben: <a href="mailto: alex_prof@web.de" className="email">alex_prof@web.de</a></p>
         <h3 className="itemtitle whitetext">Gesprochene Sprachen</h3>
         <Table striped responsive>
           <thead>

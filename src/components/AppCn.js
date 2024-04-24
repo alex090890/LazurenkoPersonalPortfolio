@@ -7,7 +7,6 @@ export default function AppCn() {
       <div className="maincontainer">
         <Header />
         <MyTabsCn />
-        <h1>Привіт</h1>
       </div>
     </div>
   );

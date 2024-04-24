@@ -1,33 +1,185 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Address from "./Address";
-import Currentposition from "./Currentposition";
-import Social from "./Social";
+import MyMapComponent from "./MyMapComponent";
+import Table from 'react-bootstrap/Table';
+import Footer from "./Footer";
+import { Card } from 'antd';
+import { IoLogoGithub } from "react-icons/io";
+import Carousel from 'react-bootstrap/Carousel';
+const { Meta } = Card;
 
 const MyTabsCn = () => {
-  return (
+return (
     <Tabs>
       <TabList>
-        <Tab>Головна</Tab>
-        <Tab>Про мене</Tab>
-        <Tab>Контактні дані</Tab>
-        <Tab>Мої проекти</Tab>
-        <Tab>Сертифікати</Tab>
+        <Tab>主页</Tab>
+        <Tab>关于我</Tab>
+        <Tab>联系方式</Tab>
+        <Tab>投资组合库</Tab>
+        <Tab>证书</Tab>
       </TabList>
 
       <TabPanel>
-        <h2>Ласкаво просимо</h2>
+        <div className="homecontainer">
+          <Card hoverable className="homeimage" cover={<img alt="example" src="/Bewerbungsbild.jpg" />}>
+          <Meta title="Oleksandr Lazurenko" description="alex_prof@web.de" />
+        </Card>
+        <Card hoverable title="Welcome to AlexProf!" bordered={false} className="homecard" >
+          <p>尊敬的女士们、先生们，</p>
+          <br />
+          <p>欢迎来到全栈 Web 开发人员 Oleksandr Lazurenko 的个人作品集网页。竭诚为您从头开始构建网站，源于设计，始于后端。专注于 MERN (MongoDB、Express、React、Node.js)。以下是我的优势: </p>
+          <ol>
+            <li>准时</li>
+            <li>负责</li>
+            <li>可靠</li>
+            <li>勤奋</li>
+          </ol>
+            <p>如需了解详情，请随时与我联系。</p>
+            <p>祝一切顺利，</p>
+            <br />
+            <p>Oleksandr Lazurenko</p>
+            <hr />
+            <Footer />
+          </Card>
+        </div>
       </TabPanel>
       <TabPanel>
-        <Social />
+        <h1 className="itemtitle whitetext">Oleksandr Lazurenko</h1>
+        <h2 className="itemtitle whitetext">Fullstack Web Developer</h2>
+        <p className="whitetext">如果您对我的简历和其他资历感兴趣，请随时联系，或致电邮件：<a href="mailto: alex_prof@web.de" className="email">alex_prof@web.de</a></p>
+        <h3 className="itemtitle whitetext">使用语言</h3>
+        <Table striped responsive>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>语言</th>
+              <th>等级</th>
+              <th>欧洲分类</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>乌克兰语</td>
+              <td>母语</td>
+              <td>C2</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>俄语</td>
+              <td>母语</td>
+              <td>C2</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>英语</td>
+              <td>先进水平</td>
+              <td>C1</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>德语</td>
+              <td>上级水平</td>
+              <td>B2</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>中文</td>
+              <td>初学者的水平</td>
+              <td>A2</td>
+            </tr>
+          </tbody>
+        </Table>
+        <p className="whitetext">专注于： MERN (MongoDB、Express、React、Node.js): </p>
+        <ul className="whitetext">
+          <li>MongoDB</li>
+          <li>ExpressJS</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Vercel</li>
+          <li>Netlify</li>
+        </ul>
+        <p className="whitetext">孜孜以求，精益求精，学习新技能，总是极具吸引力。</p>
+        <hr />
+        <Footer />
       </TabPanel>
       <TabPanel>
-        <h2>Наше місцезнаходженн/</h2>
-        <Currentposition />
+        <h1 className="itemtitle whitetext">我们的位置</h1>
+        <h2 className="itemtitle whitetext">邮寄地址</h2>
         <Address />
+      <MyMapComponent />
+      <p className="whitetext"><span className="notice"><b>! 注意: </b></span>中国大陆的领土上没有地图和Google表格, 请通过电子邮件与我联系: <a href="mailto: alex_prof@web.de" className="email">alex_prof@web.de</a></p>
+        <h2 className="itemtitle whitetext" >联系表</h2>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfBsAmK4Yo2B6t73BOQstj1dcvFHVT586PCFjQf3zlRn7NE_A/viewform?embedded=true" width="100%" height="676" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
       </TabPanel>
-      <TabPanel></TabPanel>
       <TabPanel>
+        <h2 className="itemtitle whitetext"><a href="https://github.com/alex090890"><IoLogoGithub /></a>投资组合库</h2>
+        <div className="imagecontainer">
+          <img src="/Screenshot 2024-04-24 09.53.01.png" alt="portfolio sample 1" className="imagecard" />
+          <img src="/Screenshot 2024-04-24 09.55.52.png" ale="portfolio sample 2" className="imagecard" />
+          <img src="/Screenshot 2024-04-24 10.10.25.png" alt="portfolio sample 3" className="imagecard" />
+          <img src="/Screenshot 2024-04-24 10.14.29.png" alt="portfolio sample 4" className="imagecard" />
+          <img src="/Screenshot 2024-04-24 10.18.14.png" alt="portfolio sample 5" className="imagecard" />
+        </div>
+        <hr />
+        <Footer />
+      </TabPanel>
+      <TabPanel>
+                <div>
+          <div>
+      <h2 className="itemtitle whitetext">语言证书</h2>
+      <Carousel fade>
+        <Carousel.Item>
+          <img src="/Englishscore.jpg" alt="Englishscore" className="englishscore" />
+          <Carousel.Caption>
+            <h3>EnglischScore Certificate</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src="/Goethe.jpg" alt="Goethe" className="englishscore" />
+          <Carousel.Caption>
+            <h3>Goethe</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src="/Chinese HSK.jpg" alt="Chinese" className="englishscore" />
+          <Carousel.Caption>
+            <h3>Chinese</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+    </div>
+    <div>
+        <h2 className="itemtitle whitetext">IT证书</h2>
+        <Carousel>
+          <Carousel.Item>
+            <img src="/Codecademy.png" alt="Codecademy" className="englishscore" />
+            <Carousel.Caption>
+              <h3>Codecademy</h3>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="/Freecodecamp.png" alt="Freecodecamp" className="englishscore" />
+            <Carousel.Caption>
+              <h3>Freecodecamp</h3>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="/Mongodb.png" alt="Mongodb" className="englishscore" />
+            <Carousel.Caption>
+              <h3>Mongodb</h3>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="/Linkedin.png" alt="Linkedin" className="englishscore" />
+            <Carousel.Caption>
+              <h3>Linkedin</h3>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+      </div>
+        </div>
       </TabPanel>
     </Tabs>
   );

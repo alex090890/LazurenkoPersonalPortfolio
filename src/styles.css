@@ -132,6 +132,19 @@ html {
   text-align: center;
 }
 
+.notice {
+  color: red;
+}
+
+.email {
+  color: yellowgreen;
+}
+
+.email:hover {
+  background-color: chartreuse;
+  color: blueviolet;
+}
+
 @media screen and (max-width: 600px) {
   .homecontainer {
     grid-template-columns: 1fr;
