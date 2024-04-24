@@ -1,12 +1,12 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Address from "./Address";
-import Certificates from "./certificates/Certificates";
 import Currentposition from "./Currentposition";
 import Table from 'react-bootstrap/Table';
 import Footer from "./Footer";
 import { Card } from 'antd';
 import { IoLogoGithub } from "react-icons/io";
+import Carousel from 'react-bootstrap/Carousel';
 const { Meta } = Card;
 
 const MyTabs = () => {
@@ -45,10 +45,10 @@ const MyTabs = () => {
         </div>
       </TabPanel>
       <TabPanel>
-        <h1 className="itemtitle">Oleksandr Lazurenko</h1>
-        <h2 className="itemtitle">Fullstack Web Developer</h2>
-        <p>If you are interessted about my CV and other credentials, please feel free to contact me using the contact form or write directly to my email: <a href="mailto: alex_prof@web.de">alex_prof@web.de</a></p>
-        <h3 className="itemtitle">Languages spoken:</h3>
+        <h1 className="itemtitle whitetext">Oleksandr Lazurenko</h1>
+        <h2 className="itemtitle whitetext">Fullstack Web Developer</h2>
+        <p className="whitetext">If you are interested about my CV and other credentials, please feel free to contact me using the contact form or write directly to my email: <a href="mailto: alex_prof@web.de">alex_prof@web.de</a></p>
+        <h3 className="itemtitle whitetext">Languages spoken:</h3>
         <Table striped responsive>
           <thead>
             <tr>
@@ -91,8 +91,8 @@ const MyTabs = () => {
             </tr>
           </tbody>
         </Table>
-        <p> My main stack is MERN (MongoDB, Express, React, Node.js):</p>
-        <ul>
+        <p className="whitetext"> My main stack is MERN (MongoDB, Express, React, Node.js):</p>
+        <ul className="whitetext">
           <li>MongoDB</li>
           <li>ExpressJS</li>
           <li>React</li>
@@ -100,19 +100,19 @@ const MyTabs = () => {
           <li>Vercel</li>
           <li>Netlify</li>
         </ul>
-        <p>I am always eager to learn, and learning some new skills is always fascinating to me.</p>
+        <p className="whitetext">I am always eager to learn, and learning some new skills is always fascinating to me.</p>
         <hr />
         <Footer />
       </TabPanel>
       <TabPanel>
-        <h2 className="itemtitle">Our Location</h2>
+        <h2 className="itemtitle whitetext">Our Location</h2>
         <Currentposition />
         <Address />
-        <h2 className="itemtitle">Contact me:</h2>
+        <h2 className="itemtitle whitetext" >Contact me:</h2>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfBsAmK4Yo2B6t73BOQstj1dcvFHVT586PCFjQf3zlRn7NE_A/viewform?embedded=true" width="100%" height="676" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
       </TabPanel>
       <TabPanel>
-        <h2 className="itemtitle"><a href="https://github.com/alex090890"><IoLogoGithub /></a>Portfolio Repositories</h2>
+        <h2 className="itemtitle whitetext"><a href="https://github.com/alex090890"><IoLogoGithub /></a>Portfolio Repositories</h2>
         <div className="imagecontainer">
           <img src="/Screenshot 2024-04-24 09.53.01.png" alt="portfolio sample 1" className="imagecard" />
           <img src="/Screenshot 2024-04-24 09.55.52.png" ale="portfolio sample 2" className="imagecard" />
@@ -124,7 +124,60 @@ const MyTabs = () => {
         <Footer />
       </TabPanel>
       <TabPanel>
-        <Certificates />
+                <div>
+          <div>
+      <h2 className="itemtitle whitetext">Language certificates</h2>
+      <Carousel fade>
+        <Carousel.Item>
+          <img src="/Englishscore.jpg" alt="Englishscore" className="englishscore" />
+          <Carousel.Caption>
+            <h3>EnglischScore Certificate</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src="/Goethe.jpg" alt="Goethe" className="englishscore" />
+          <Carousel.Caption>
+            <h3>Goethe</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src="/Chinese HSK.jpg" alt="Chinese" className="englishscore" />
+          <Carousel.Caption>
+            <h3>Chinese</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+    </div>
+    <div>
+        <h2 className="itemtitle whitetext">IT certificates</h2>
+        <Carousel>
+          <Carousel.Item>
+            <img src="/Codecademy.png" alt="Codecademy" className="englishscore" />
+            <Carousel.Caption>
+              <h3>Codecademy</h3>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="/Freecodecamp.png" alt="Freecodecamp" className="englishscore" />
+            <Carousel.Caption>
+              <h3>Freecodecamp</h3>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="/Mongodb.png" alt="Mongodb" className="englishscore" />
+            <Carousel.Caption>
+              <h3>Mongodb</h3>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="/Linkedin.png" alt="Linkedin" className="englishscore" />
+            <Carousel.Caption>
+              <h3>Linkedin</h3>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+      </div>
+        </div>
       </TabPanel>
     </Tabs>
   );

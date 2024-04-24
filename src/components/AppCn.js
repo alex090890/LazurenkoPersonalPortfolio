@@ -1,7 +1,7 @@
 import Header from "./Header";
 import MyTabsUkr from "./MyTabsUkr";
 
-export default function AppUkr() {
+export default function AppCn() {
   return (
     <div>
       <div className="maincontainer">
