@@ -12,10 +12,6 @@ html {
 
 .App {
   font-family: sans-serif;
-  background: linear-gradient(45deg, #6bff6b, #ffffff);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: fill;
   height: 100%;
   width: 100%;
   color: black;
